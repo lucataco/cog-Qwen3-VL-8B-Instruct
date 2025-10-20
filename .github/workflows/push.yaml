@@ -42,7 +42,7 @@ jobs:
           # can push your model without needing to pass in a token.
           #
           # To genereate a CLI auth token, run `cog login` or visit this page
-          # in your browser: https://replicate.com/account/api-token
+          # in your browser: https://replicate.com/account/api-tokens
           token: ${{ secrets.REPLICATE_CLI_AUTH_TOKEN }}
 
       # If you trigger the workflow manually, you can specify the model name.

@@ -90,7 +90,7 @@ class Predictor(BasePredictor):
         prompt: str = Input(
             description="Instruction or conversation turn for Qwen3-VL.",
         ),
-        image: Optional[Path] = Input(
+        image: Path = Input(
             description="Optional image supplying visual context.",
             default=None,
         ),
@@ -114,7 +114,7 @@ class Predictor(BasePredictor):
         ),
     ) -> str:
         """Run a single multimodal instruction-following generation."""
-        pil_image: Optional[Image.Image] = None
+        pil_image = None
         if image is not None:
             with Image.open(image) as pil:
                 pil_image = pil.convert("RGB")

@@ -9,3 +9,4 @@ safetensors>=0.4.3
 sentencepiece>=0.1.99
 tiktoken>=0.7.0
 numpy<2
+opencv-python>=4.8.0

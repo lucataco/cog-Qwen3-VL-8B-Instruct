@@ -83,3 +83,8 @@ To customize behavior:
 - Adjust prompt preprocessing or response postprocessing in `Predictor._prepare_inputs` and `Predictor.predict`.
 - Add new CLI inputs by extending the signature of `Predictor.predict` with additional `cog.Input` definitions.
 
+## License
+
+The code in this repository is licensed under the [Apache License 2.0](LICENSE).
+
+The model weights are not covered by this license. [Qwen/Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct) is released under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license.
